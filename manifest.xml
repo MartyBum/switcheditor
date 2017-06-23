@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE plugin SYSTEM "manifest.dtd">
+<plugin version="2">
+	<info>
+		<version>0.9</version>
+		<name>switcheditor</name>
+		<title>Switch Editor</title>
+		<author>Martijn Alberts</author>
+		<description>Switch between HTML and plain text editor</description>
+	</info>
+	<config>
+		<configfile>config.php</configfile>
+	</config>
+	<components>
+		<component>
+			<files>
+				<server>
+					<serverfile>php/plugin.switcheditor.php</serverfile>
+				</server>
+				<client>
+					<clientfile load="release">js/switcheditor.js</clientfile>
+					<clientfile load="debug">js/switcheditor.js</clientfile>
+					<clientfile load="source">js/switcheditor.js</clientfile>
+				</client>
+				<resources>
+					<resourcefile load="release">css/switcheditor.css</resourcefile>
+					<resourcefile load="debug">css/switcheditor.css</resourcefile>
+					<resourcefile load="source">css/switcheditor.css</resourcefile>
+				</resources>
+			</files>
+		</component>
+	</components>
+</plugin>
