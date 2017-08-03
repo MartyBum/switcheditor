@@ -44,7 +44,7 @@ class Pluginswitcheditor extends Plugin {
 			'zarafa' => Array(
 				'v1' => Array(
 					'plugins' => Array(
-						'dontclickme' => Array(
+						'switcheditor' => Array(
 							'enable' => PLUGIN_SWITCHEDITOR_USER_DEFAULT_ENABLE
 						)
 					)

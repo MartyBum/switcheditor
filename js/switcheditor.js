@@ -7,6 +7,16 @@ Ext.namespace('Zarafa.plugins.switcheditor');
  */
 Zarafa.plugins.switcheditor.SwitchEditorPlugin  = Ext.extend(Zarafa.core.Plugin, {
 
+    /* What's new content */
+    whatsNew : {
+        version: '0.9',
+        features: [{
+            title: 'Switch button in editor',
+            description: 'Real time switch between editors, without navigating to settings. Keep in mind formatting is lost while switching.',
+            image_url: 'img/new.png'
+        }]
+    },
+
     initPlugin : function() {
       this.registerInsertionPoint('context.mail.mailcreatecontentpanel.toolbar.actions', this.createNewDelayDeliveryButton, this);
     },
