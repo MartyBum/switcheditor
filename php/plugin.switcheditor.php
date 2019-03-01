@@ -8,7 +8,7 @@ class Pluginswitcheditor extends Plugin {
 	/**
 	 * Constructor
 	 */
-	function Pluginswitcheditor() {}
+	function __construct() {}
 
 	/**
 	 * Function initializes the Plugin and registers all hooks
